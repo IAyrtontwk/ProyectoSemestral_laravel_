@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         // comando: php artisan db:seed
         // \App\Models\User::factory(10)->create();
         // PerfilesSeeder::class,
-        // ProyectosSeeder::class,
+        // ProyectosSeeder::class;
         // UsuariosSeeder::class,
     }
 }
