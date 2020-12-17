@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use DB;
+use Faker\Factory as Faker;
 
 class PerfilesSeeder extends Seeder
 {
@@ -13,6 +15,9 @@ class PerfilesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $faker = Faker::create();
+        $perfiles = [];
+
+        /* foreach( range ... ) */
     }
 }

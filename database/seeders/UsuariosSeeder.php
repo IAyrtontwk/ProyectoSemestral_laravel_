@@ -1,6 +1,8 @@
 <?php
 
 namespace Database\Seeders;
+use DB;
+use Faker\Factory as Faker;
 
 use Illuminate\Database\Seeder;
 
@@ -13,6 +15,9 @@ class UsuariosSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $faker = Faker::create();
+        $usuarios = [];
+
+        /* foreach( range ... ) */
     }
 }

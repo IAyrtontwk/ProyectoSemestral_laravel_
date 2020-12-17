@@ -13,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // comando: php artisan db:seed
         // \App\Models\User::factory(10)->create();
+        // PerfilesSeeder::class,
+        // ProyectosSeeder::class,
+        // UsuariosSeeder::class,
     }
 }
