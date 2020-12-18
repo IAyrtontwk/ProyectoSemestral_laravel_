@@ -1,6 +1,15 @@
 <?php
 
+use App\Models\Usuario;
+use App\Models\PerfilCongresista;
+use App\Models\Proyecto;
 use Illuminate\Support\Facades\Route;
+use App\Http\Resources\UsuarioResource;
+use App\Http\Controllers\UsuarioController;
+use App\Http\Resources\PerfilCongresistaResource;
+use App\Http\Controllers\PerfilCongresistaController;
+use App\Http\Resources\ProyectoResource;
+use App\Http\Controllers\ProyectoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +25,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/usuarios', 'UsuarioController@index');
+Route::get('/perfiles', 'PerfilCongresistaController@index');
+Route::get('/proyectos', 'ProyectoController@index');
