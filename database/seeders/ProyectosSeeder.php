@@ -27,7 +27,7 @@ class ProyectosSeeder extends Seeder
                 'id_camara'=> $faker->randomElement($camaras),
                 'urlProyecto'=> $faker->url(),
                 'urlVotacion'=> $faker->url(),
-                'created_at'=> now(),
+                'created_at'=> now()
             ];
         }
         DB::table('proyectos')->insert($proyectos);

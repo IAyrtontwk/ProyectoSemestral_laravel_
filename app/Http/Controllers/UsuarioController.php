@@ -24,6 +24,7 @@ class UsuarioController extends Controller
             'apellido' => 'required|min:5|max:255',
             'email' => 'required|min:5|max:255',
             'contraseña' => 'required|min:5|max:255',
+            'fechaNacimiento' => 'required|min:5|max:255'
         ]);
     }
     public function store()

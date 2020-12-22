@@ -26,5 +26,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/usuarios', 'UsuarioController@index');
+Route::post('/usuarios', 'UsuarioController@store');
 Route::get('/perfiles', 'PerfilCongresistaController@index');
+Route::get('/perfiles/{perfil}', 'PerfilCongresistaController@show');
+Route::post('/perfiles', 'PerfilCongresistaController@store');
+Route::post('/proyectos', 'ProyectoController@store');
 Route::get('/proyectos', 'ProyectoController@index');
+Route::delete('/proyectos/{proyecto}', 'ProyectoController@destroy');

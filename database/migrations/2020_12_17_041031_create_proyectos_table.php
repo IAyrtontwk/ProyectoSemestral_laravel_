@@ -20,7 +20,7 @@ class CreateProyectosTable extends Migration
             $table->date('fecha');
             $table->foreignId('id_camara')->constrained('parametros');
             $table->string('urlProyecto');
-            $table->string('urlVotacion');
+            $table->string('urlVotacion') -> nullable();
             $table->timestamps();
         });
     }

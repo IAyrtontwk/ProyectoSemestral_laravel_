@@ -22,7 +22,7 @@ class ProyectoController extends Controller
         return request()->validate([
             'titulo' => 'required|min:5|max:255',
             'estado' => 'required|integer|min:1',
-            'fecha' => 'required|date|max:now()',
+            'fecha' => 'required|min:5|max:255',
             'camara' => 'required|integer|min:1',
             'urlProyecto' => 'required|min:5|max:255',
             'urlVotacion' => 'required|min:5|max:255',

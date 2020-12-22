@@ -22,9 +22,9 @@ class PerfilCongresistaController extends Controller
             'nombre' => 'required|min:5|max:255',
             'apellidos' => 'required|min:5|max:255',
             'territorio' => 'required|integer|min:1',
-            'numterritorio' => 'required|integer|min:1',
+            'numTerritorio' => 'required|integer|min:1',
             'partido' => 'required|integer|min:1',
-            'email' => 'required|min:5|max:255',
+            'email' => 'required|min:5|max:255'
         ]);
     }
     public function store()
@@ -33,6 +33,7 @@ class PerfilCongresistaController extends Controller
         $perfil = PerfilCongresista::create($data);
         return new PerfilCongresistaResource($perfil);
     }
+    /*
     public function update(PerfilCongresista $perfil)
     {
         $data = $this -> validateRequest();
@@ -44,5 +45,6 @@ class PerfilCongresistaController extends Controller
         $perfil -> delete();
         return response()->noContent();
     }
+    */
 }
 
